@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--프로그래스바 뒤에 나타나는 배경색상-->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="5dip"/>
+            <gradient
+                android:startColor="#C5BFB9"
+                android:centerColor="#9F9B96"
+                android:endColor="#ff747674"
+                android:centerY="0.75"
+                android:angle="270">
+            </gradient>
+        </shape>
+    </item>
+    <item
+        android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip"/>
+                <gradient
+                    android:startColor="#809E8937"
+                    android:centerColor="#34971D1D"
+                    android:endColor="#A0732828"
+                    android:centerY="0.75"
+                    android:angle="270"/>
+            </shape>
+        </clip>
+    </item>
+
+
+    <!-- 상태 바가 늘어날때 들어가는 색상-->
+    <item
+        android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners
+                    android:radius="5dip"/>
+                <gradient
+                    android:startColor="#BFE5E8ED"
+                    android:centerColor="#77ADB1C8"
+                    android:endColor="#C8A1A6C6"
+                    android:centerY="0.75"
+                    android:angle="270"
+                    />
+                <stroke
+                    android:width="3dp"
+                    android:color="#000000"
+                    />
+                <padding
+                    android:left="10dp"
+                    android:top="10dp"
+                    android:right="10dp"
+                    android:bottom="10dp"
+                    />
+            </shape>
+        </clip>
+    </item>
+</layer-list>
