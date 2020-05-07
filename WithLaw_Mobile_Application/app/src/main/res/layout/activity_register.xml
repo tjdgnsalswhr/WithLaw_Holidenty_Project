@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:background="@drawable/background_gradient"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/idpwbox_layout"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/layout_radius_not_boundary"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textSize="12dp"
+            android:text="이름"
+            android:fontFamily="@font/lottehappybold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:drawableRight="@drawable/ic_identity"
+            android:id="@+id/register_name"
+            android:hint="---------"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:fontFamily="@font/lottehappybold"
+            android:textSize="12dp"
+            android:text="아이디"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:drawableRight="@drawable/ic_password"
+            android:id="@+id/register_id"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawablePadding="20dp"
+            android:hint="*******"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="12dp"
+            android:text="비밀번호"
+            android:fontFamily="@font/lottehappybold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:drawableRight="@drawable/ic_email"
+            android:id="@+id/register_password"
+            android:hint="---------"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="12dp"
+            android:text="핸드폰번호"
+            android:fontFamily="@font/lottehappybold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:drawableRight="@drawable/ic_phone"
+            android:id="@+id/register_phonenumber"
+            android:hint="---------"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <EditText
+            android:visibility="invisible"
+            android:drawableRight="@drawable/ic_supervisor"
+
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registerlayout_register_button"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="548dp"
+        android:background="@drawable/enterlayout_signin_button"
+        android:fontFamily="@font/lottehappybold"
+        android:text="회원가입"
+        android:textAllCaps="false"
+        android:textColor="#FFF" />
+
+    <ImageView
+        android:id="@+id/register_logo"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/layout_radius"
+        android:src="@drawable/logo_only"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:textSize="22sp"
+        android:textColor="#FFF"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/lottehappybold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/register_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"/>
+
+    <TextView
+        android:layout_below="@id/registerlayout_register_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lottehappybold"
+        android:textColor="#cfd1d4"
+        android:clickable="true"
+        android:text="이미 회원이신가요? 로그인하기"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        />
+
+
+</RelativeLayout>

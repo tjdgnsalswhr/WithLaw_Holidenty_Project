@@ -14,13 +14,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter);
 
-        Button button = (Button) findViewById(R.id.enterlayout_login_button);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button button_login = (Button) findViewById(R.id.enterlayout_login_button);
+        button_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Intent intent = new Intent(this, LoadingActivity.class);
                 //startActivity(intent);
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button button_register = (Button) findViewById(R.id.enterlayout_register_button);
+        button_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Intent intent = new Intent(this, LoadingActivity.class);
+                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
         });

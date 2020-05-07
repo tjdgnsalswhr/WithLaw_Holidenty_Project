@@ -668,8 +668,12 @@ drawable enterlayout_signin_button_clickevent
 drawable enterlayout_signup_button
 drawable enterlayout_signup_button_clickeffect
 drawable enterlayout_signup_button_clickevent
+drawable ic_email
+drawable ic_identity
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_password
+drawable ic_phone
 drawable ic_supervisor
 drawable ic_supervisor_account_blue
 drawable layout_radius
@@ -790,6 +794,7 @@ id disableHome
 id edit_query
 id end
 id enterlayout_login_button
+id enterlayout_register_button
 id expand_activities_button
 id expanded_menu
 id forever
@@ -811,8 +816,9 @@ id line1
 id line3
 id listMode
 id list_item
-id login_id_edittext
+id login_id
 id login_logo
+id login_password
 id loginlayout_login_button
 id message
 id middle
@@ -833,6 +839,12 @@ id progressBar
 id progress_circular
 id progress_horizontal
 id radio
+id register_id
+id register_logo
+id register_name
+id register_password
+id register_phonenumber
+id registerlayout_register_button
 id right
 id right_icon
 id right_side
@@ -937,6 +949,8 @@ layout activity_enter
 layout activity_loading
 layout activity_login
 layout activity_main
+layout activity_menu
+layout activity_register
 layout custom_dialog
 layout notification_action
 layout notification_action_tombstone

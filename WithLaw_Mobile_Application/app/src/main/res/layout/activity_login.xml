@@ -28,8 +28,8 @@
 
     <LinearLayout
         android:id="@+id/idpwbox_layout"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="250dp"
         android:background="@drawable/layout_radius_not_boundary"
         android:padding="20dp"
@@ -48,10 +48,10 @@
             android:layout_height="wrap_content"/>
 
         <EditText
-            android:drawableRight="@drawable/ic_supervisor"
-            android:id="@+id/login_id_edittext"
+            android:drawableRight="@drawable/ic_identity"
+            android:id="@+id/login_id"
+            android:hint="---------"
             android:drawablePadding="20dp"
-            android:hint="-------"
             android:layout_width="match_parent"
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
@@ -67,7 +67,8 @@
             android:layout_height="wrap_content"/>
 
         <EditText
-            android:drawableRight="@drawable/ic_supervisor"
+            android:drawableRight="@drawable/ic_password"
+            android:id="@+id/login_password"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:drawablePadding="20dp"
@@ -79,8 +80,8 @@
         <EditText
             android:visibility="invisible"
             android:drawableRight="@drawable/ic_supervisor"
+
             android:drawablePadding="20dp"
-            android:hint="*******"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
